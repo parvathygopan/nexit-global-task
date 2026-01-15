@@ -1,7 +1,8 @@
 "use client";
 
 import {motion} from "framer-motion";
-import {useEffect, useState} from "react";
+import {useState} from "react";
+import CardLogo from "../../../../public/Assets/cardiamge.png";
 import ClientSlider from "../../../../public/Assets/clientslider.jpg";
 import Image from "next/image";
 const ClientsSlide = () => {
@@ -115,9 +116,97 @@ const ClientsSlide = () => {
           </motion.p>
 
           <div className="container">
-            <div className="row">
-              <div className="col-lg-4 col-md-6 col-sm-12">
-                <div className="card p-2">dfd</div>
+            <div className="container my-5">
+              <div className="row g-4 align-items-center">
+                <div className="col-md-4 col-sm-12">
+                  <div className="stat-card text-center">
+                    <div className="row">
+                      <div className="col-md-6 col-sm-12">
+                        {" "}
+                        <h1 className="stat-number">3000+</h1>
+                        <p className="stat-text">happy clients</p>
+                      </div>
+                      <div className="col-md-6 col-sm-12">
+                        <Image
+                          src={CardLogo}
+                          layout="responsive"
+                          alt="card-log "
+                        />
+                        <br />
+                        <div className="row">
+                          <div className="col-md-6 col-sm-12">
+                            <Image
+                              src={CardLogo}
+                              layout="responsive"
+                              alt="card-log "
+                            />
+                          </div>
+                          <div className="col-md-6">
+                            <Image
+                              src={CardLogo}
+                              layout="responsive"
+                              alt="card-log "
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <div className="stat-card image-card">
+                    <div className="overlay">
+                      <h1 className="stat-number text-white">100+</h1>
+                      <p className="stat-text text-white">Active Projects</p>
+                    </div>
+
+                    <Image src={ClientSlider} alt="work" fill className="img" />
+                  </div>
+                </div>
+
+                {/* Right Card */}
+                <div className="col-md-4 col-sm-12">
+                  <div className="stat-card d-flex align-items-center justify-content-between">
+                    <div>
+                      <h1 className="stat-number">20+</h1>
+                      <p className="stat-text">
+                        Years
+                        <br />
+                        Experience
+                      </p>
+                    </div>
+
+                    <div className="progress-ring">
+                      <svg width="120" height="120">
+                        <circle
+                          cx="60"
+                          cy="60"
+                          r="50"
+                          stroke="#e6f6f5"
+                          strokeWidth="10"
+                          fill="none"
+                        />
+                        <circle
+                          cx="60"
+                          cy="60"
+                          r="50"
+                          stroke="url(#grad)"
+                          strokeWidth="10"
+                          fill="none"
+                          strokeDasharray="314"
+                          strokeDashoffset="80"
+                          strokeLinecap="round"
+                        />
+                        <defs>
+                          <linearGradient id="grad">
+                            <stop offset="0%" stopColor="#25c6c1" />
+                            <stop offset="100%" stopColor="#a6ede9" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

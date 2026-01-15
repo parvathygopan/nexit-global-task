@@ -1,5 +1,9 @@
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import ClientsSlide from "./Components/Home/ClientsSlide";
+import FaqSection from "./Components/Home/FaqSection";
+import Industries from "./Components/Home/Industries";
+import Ourstory from "./Components/Home/Ourstory";
 import QuoteSlider from "./Components/Home/QuoteSlider";
 
 export default function Home() {
@@ -106,6 +110,10 @@ export default function Home() {
         </section>
         <QuoteSlider />
         <ClientsSlide />
+        <Ourstory />
+        <Industries />
+        <FaqSection />
+        <Footer />
       </div>
     </div>
   );

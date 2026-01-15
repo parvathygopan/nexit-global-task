@@ -1,5 +1,6 @@
 import React from "react";
-
+import Logo from "../../../public/Assets/dummylogo.png"
+import Image from "next/image";
 function Header() {
   return (
     <div>
@@ -8,8 +9,8 @@ function Header() {
           <nav className="navbar navbar-expand-lg navbar-dark p-0">
             <div className="container-fluid">
               <a className="navbar-brand logo-container" href="#">
-                <div className="logo-icon">◎</div>
-                <span className="logo-text">LOGO</span>
+          
+                <Image src={Logo} alt="logo" layout="cover" width={100} />
               </a>
               <button
                 className="navbar-toggler"
@@ -25,7 +26,7 @@ function Header() {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto nav-menu">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <a className="nav-link active" href="#">
                       Home
                     </a>
                   </li>

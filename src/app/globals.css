@@ -268,7 +268,7 @@ body {
   position: relative;
   background: #fff;
   border-radius: 10% 50% 20% 30%;
-  padding: 40px 60px;
+  padding: 20px 60px;
   border-radius: 0 0 0 24px;
 }
 .image-wrap{
@@ -419,124 +419,68 @@ body {
   margin: 0 auto 60px;
   line-height: 1.7;
 }
-/* 
-.clients-stats {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  gap: 30px;
-  max-width: 1400px;
-  margin: 0 auto;
-  align-items: center;
-}
-
 .stat-card {
-  background: white;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 200px !important;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-.stat-card-1 {
-  gap: 20px;
-}
-
-.stat-logos {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.small-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: #666;
-}
-
-.logo-circle-small {
-  width: 32px;
-  height: 32px;
-  background: #000;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
+  position: relative;
+  height: 180px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 .stat-number {
+  margin-bottom: 5px;
   font-size: 48px;
-  font-weight: 300;
-  color: #1f2937;
-  margin: 0;
+  font-weight: 700;
 }
 
-.stat-label {
-  font-size: 15px;
-  color: #999;
-  margin: 5px 0 0 0;
+.stat-text {
+  font-size: 16px;
+  color: #888;
 }
 
-.stat-sublabel {
-  font-size: 15px;
-  color: #1f2937;
-  font-weight: 500;
-  margin: 3px 0 0 0;
-}
-
-.stat-card-center {
-  overflow: hidden;
-  padding: 0 !important;
-}
-
-.stat-image-wrapper {
-  width: 100%;
-  height: 100%;
+.logos {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.stat-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.logo-box {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #f4f4f4;
+  border-radius: 8px;
 }
 
-.stat-card-3 {
-  position: relative;
-  min-height: 300px;
+
+.image-card {
+  padding: 0;
+  overflow: hidden;
 }
 
-.stat-content {
-  position: relative;
-  z-index: 2;
+.image-card .img {
+  object-fit: cover;
+  border-radius: 20px;
 }
 
-.circular-progress {
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  opacity: 0.6;
-} */
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.progress-ring {
+  width: 120px;
+  height: 120px;
+}
+
 
 @media (max-width: 1024px) {
   .clients-header {
@@ -612,12 +556,33 @@ body {
     height: 150px;
   }
 }
-
+.indus{
+  font-size: 3.5rem;
+  width: 70%;
+  font-weight: 300;
+}
+.pt-100{
+  padding-top: 100px;
+}
+.active{
+  color: #000 !important;
+}
 @media (max-width: 576px) {
   .clients-section {
     padding: 40px 10px;
   }
-
+  .new-container-header{
+   width: 85% !important;
+  }
+.words{
+  font-size: 12px;
+}
+.image-card{
+  height: 100px !important;
+}
+.first-side{
+  background: transparent;
+}
   .clients-title {
     font-size: 24px;
   }
@@ -652,6 +617,7 @@ body {
 
   .stat-card {
     padding: 20px;
+    height: 100%;
   }
 
   .stat-number {
@@ -670,4 +636,195 @@ body {
     width: 120px;
     height: 120px;
   }
+}
+.footer-section {
+  background: linear-gradient(135deg, #0bb3ad, #0b2b2e);
+  color: #d4f1f0;
+  padding: 80px 0;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 36px;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.footer-links a {
+  color: #d4f1f0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d4f1f0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #ffffff;
+  color: #0bb3ad;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-bottom: 10px;
+  }
+}
+.faq-section {
+  background: #0aa3a3;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.faq-title {
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.faq-desc {
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+.faq-card {
+  background: #10b3b3;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 60px;
+}
+
+.faq-card h3 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.faq-btn {
+  background: #ffffff;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.faq-accordion .accordion-item {
+  background: #14b5b5;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 22px 25px;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #ffffff;
+}
+
+.faq-accordion .accordion-body {
+  padding: 0 25px 25px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 42px;
+  }
+
+  .faq-card h3 {
+    font-size: 28px;
+  }
+}
+.industry-card {
+  height: 220px;
+  position: relative;
+}
+
+.industry-img {
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease;
+}
+
+.industry-card:hover .industry-img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.industry-text {
+  height: 220px;
+  background: #0d9488;
+  padding: 24px;
 }
