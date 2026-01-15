@@ -115,10 +115,10 @@ const ClientsSlide = () => {
             ad minim veniam.
           </motion.p>
 
-          <div className="container">
-            <div className="container my-5">
+          <div className="w-80 mx-auto">
+            <div className="my-5">
               <div className="row g-4 align-items-center">
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-4 col-sm-12 mx-auto">
                   <div className="stat-card text-center">
                     <div className="row">
                       <div className="col-md-6 col-sm-12">
@@ -165,8 +165,8 @@ const ClientsSlide = () => {
                 </div>
 
                 {/* Right Card */}
-                <div className="col-md-4 col-sm-12">
-                  <div className="stat-card d-flex align-items-center justify-content-between">
+                <div className="col-md-4 col-sm-12 align-items-center">
+                  <div className="stat-card mx-auto d-flex align-items-center justify-content-center">
                     <div>
                       <h1 className="stat-number">20+</h1>
                       <p className="stat-text">
